@@ -4,8 +4,27 @@ body {
   font-size: 1rem;
 }
 
+h3,
 p {
   margin: 0px;
+}
+
+table {
+  width: 100%;
+  border: none;
+}
+
+table thead {
+  font-weight: 600;
+}
+
+table tbody tr:hover {
+  cursor: pointer;
+  background-color: #dddddd;
+}
+
+table td {
+  padding: 8px 12px;
 }
 
 #dashboard-page {
@@ -117,6 +136,10 @@ p {
 }
 
 /* Content Styles */
+#content-wrapper {
+  padding: 96px 32px 32px;
+}
+
 .topic {
   display: flex;
   align-items: center;
@@ -133,15 +156,13 @@ p {
   border-radius: 8px;
 }
 
-#dashboard {
-  padding: 96px 32px 32px 32px;
-}
-
+/* Dashboard Styles */
 #dashboard .dashboard-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 24px;
+  margin-top: 24px;
 }
 
 #dashboard .dashboard-box {
@@ -170,4 +191,13 @@ p {
 
 #dashboard .dashboard-box .number {
   font-size: 32px;
+}
+
+/* Activity Styles */
+#activity {
+  margin-top: 24px;
+}
+
+#activity-table {
+  margin-top: 24px;
 }

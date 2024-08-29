@@ -70,34 +70,92 @@
         </div>
       </div>
       <dic id="content">
-        <div id="dashboard">
-          <div class="topic">
-            <div class="topic-icon">
-              <img src="./assets/icons/dashboard.svg" alt="" />
+        <div id="content-wrapper">
+          <div id="dashboard">
+            <div class="topic">
+              <div class="topic-icon">
+                <img src="./assets/icons/dashboard.svg" alt="" />
+              </div>
+              <h3>Dashboard</h3>
             </div>
-            <h3>Dashboard</h3>
+
+            <div class="dashboard-wrapper">
+              <div class="dashboard-box">
+                <img src="./assets/icons/thumb_up.svg" alt="" width="32px" />
+                <p class="title">Total Likes</p>
+                <p class="number">50,120</p>
+              </div>
+              <div class="dashboard-box">
+                <img
+                  src="./assets/icons/mark_chat_unread.svg"
+                  alt=""
+                  width="32px"
+                />
+                <p class="title">Comments</p>
+                <p class="number">25,120</p>
+              </div>
+              <div class="dashboard-box">
+                <img src="./assets/icons/share.svg" alt="" width="32px" />
+                <p class="title">Total Share</p>
+                <p class="number">10,320</p>
+              </div>
+            </div>
           </div>
 
-          <div class="dashboard-wrapper">
-            <div class="dashboard-box">
-              <img src="./assets/icons/thumb_up.svg" alt="" width="32px" />
-              <p class="title">Total Likes</p>
-              <p class="number">50,120</p>
+          <div id="activity">
+            <div class="topic">
+              <div class="topic-icon">
+                <img src="./assets/icons/calendar_today.svg" alt="" />
+              </div>
+              <h3>Recent Activity</h3>
             </div>
-            <div class="dashboard-box">
-              <img
-                src="./assets/icons/mark_chat_unread.svg"
-                alt=""
-                width="32px"
-              />
-              <p class="title">Comments</p>
-              <p class="number">25,120</p>
-            </div>
-            <div class="dashboard-box">
-              <img src="./assets/icons/share.svg" alt="" width="32px" />
-              <p class="title">Total Share</p>
-              <p class="number">10,320</p>
-            </div>
+
+            <table id="activity-table">
+              <thead>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Joined</td>
+                <td>Type</td>
+                <td>Status</td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>John Doe</td>
+                  <td>john@example.com</td>
+                  <td>Jan 21, 2020</td>
+                  <td>New</td>
+                  <td>Liked</td>
+                </tr>
+                <tr>
+                  <td>Kaiden Goodwin</td>
+                  <td>kaiden@example.com</td>
+                  <td>Jan 11, 2020</td>
+                  <td>Member</td>
+                  <td>Shared</td>
+                </tr>
+                <tr>
+                  <td>Hanna Harris</td>
+                  <td>hanna@example.com</td>
+                  <td>Jan 11, 2020</td>
+                  <td>New</td>
+                  <td>Shared</td>
+                </tr>
+                <tr>
+                  <td>Magnus Yates</td>
+                  <td>magnus@example.com</td>
+                  <td>Jan 10, 2020</td>
+                  <td>Member</td>
+                  <td>Shared</td>
+                </tr>
+                <tr>
+                  <td>Sharon Price</td>
+                  <td>sharon@example.com</td>
+                  <td>Jan 10, 2020</td>
+                  <td>Member</td>
+                  <td>Liked</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </dic>
