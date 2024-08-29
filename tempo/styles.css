@@ -28,7 +28,76 @@ button:hover {
   margin-top: 1rem;
 }
 
-/* Section style */
+/* Base Form Styles */
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  padding: 8px 16px;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.form-radio-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 34px;
+  gap: 16px;
+}
+
+.form-radio-label {
+  position: relative;
+  padding-left: 24px;
+}
+
+.form-radio-label > input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.form-radio-custom {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+}
+
+.form-radio-custom:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+}
+
+.form-radio-custom:after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7bb557;
+}
+
+input:check ~ .form-radio-custom {
+  background-color: #dbdbdb;
+}
+
+input:checked ~ .form-radio-custom:after {
+  display: block;
+}
+
+/* Section Styles */
 #register-page {
   display: flex;
   justify-content: center;
@@ -49,24 +118,4 @@ button:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 32px;
-}
-
-.form-control {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.form-input {
-  padding: 8px 16px;
-  background-color: #fafafa;
-  border: 1px solid #dddddd;
-  border-radius: 8px;
-}
-
-.form-radio-group {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  min-height: 34px;
 }
